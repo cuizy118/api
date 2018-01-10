@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>我是肥仔</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="datedisp"></div>
+        <div>
+            <img src="/static/images/fz.gif" />
+        </div>
+    </body>
+    <script language="javascript" type="text/javascript">
+        function getdateTime() {
+            var date = new Date();
+            var datedisp = document.getElementById("datedisp");
+            datedisp.innerHTML = date.toLocaleString();
+            setTimeout("getdateTime()", 1000);
+        }
+        getdateTime();
+    </script>
+</html>

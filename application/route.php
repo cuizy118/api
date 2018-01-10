@@ -1,4 +1,5 @@
 <?php
+
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK ]
 // +----------------------------------------------------------------------
@@ -13,9 +14,9 @@ return [
     '__pattern__' => [
         'name' => '\w+',
     ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
-
+    'fz' => 'index/Index/feizai',
+    '[menu]' => [
+        'getlist' => ['index/Menu/getMenuList', ['method' => 'get']],
+        'detail' => ['index/Menu/detail', ['method' => 'get']]
+    ]
 ];

@@ -9,4 +9,9 @@ class Index extends Controller
     {
         return json_encode(['code' => 200, 'msg' => 'success', 'result' => '我是肥仔李少！']);
     }
+    
+    public function feizai()
+    {
+        return $this->fetch('fz');
+    }
 }
